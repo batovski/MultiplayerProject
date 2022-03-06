@@ -1,0 +1,14 @@
+{
+	"configurations": [
+		{
+			"name": "MultProjectEditor Editor Win64 Development (MultProject)",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_MultProject.json"
+		},
+		{
+			"name": "Win32",
+			"intelliSenseMode": "msvc-x64",
+			"compileCommands": "C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default.json"
+		}
+	]
+}

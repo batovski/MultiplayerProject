@@ -1,0 +1,47 @@
+[
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MovingPlatform.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MovingPlatform.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProject.Build.cs",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProject.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProject.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProjectCharacter.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProjectCharacter.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProjectGameMode.cpp",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Users\\\\dan\\\\Documents\\\\Unreal Projects\\\\MultProject\\\\Source\\\\MultProject\\\\MultProjectGameMode.h",
+		"command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe @\"C:\\Users\\dan\\Documents\\Unreal Projects\\MultProject\\.vscode\\compileCommands_Default\\MultProject.210.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Source"
+	}
+]
