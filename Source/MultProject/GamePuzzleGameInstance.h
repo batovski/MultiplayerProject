@@ -19,6 +19,7 @@ class MULTPROJECT_API UGamePuzzleGameInstance : public UGameInstance, public IMe
 public:
 	
 	UGamePuzzleGameInstance(const FObjectInitializer& ObjectInitializer);
+	virtual void Init();
 
 	UFUNCTION(Exec)
 	void Host();
@@ -27,7 +28,7 @@ public:
 	void Join(const FString& Adress);
 
 	UFUNCTION(BlueprintCallable)
-	void LoadMenu();
+	void LoadMenuWidget();
 
 
 private:

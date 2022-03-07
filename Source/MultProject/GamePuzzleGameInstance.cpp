@@ -5,6 +5,8 @@
 
 #include "Engine/Engine.h"
 #include "UObject/ConstructorHelpers.h"
+#include "OnlineSubsystem.h"
+
 #include "MultProject/MenuSystem/MainMenu.h"
 #include "Blueprint/UserWidget.h"
 
@@ -14,6 +16,19 @@ UGamePuzzleGameInstance::UGamePuzzleGameInstance(const FObjectInitializer& Objec
 	if (!ensure(MenuBPClass.Class != nullptr)) return;
 
 	MenuClass = MenuBPClass.Class;
+
+}
+
+void UGamePuzzleGameInstance::Init()
+{
+	IOnlineSubsystem* Subsystem = IOnlineSubsystem::Get();
+	if(Subsystem!= nullptr)
+	{
+		IOnlineSessionPtr SessionInterface = Subsystem->GetSessionInterface();
+		if(SessionInterface.IsValid()){
+
+		}
+	}
 }
 
 void UGamePuzzleGameInstance::Host()
@@ -42,7 +57,7 @@ void UGamePuzzleGameInstance::Join(const FString& Adress)
 	PlayerController->ClientTravel(Adress, ETravelType::TRAVEL_Absolute);
 }
 
-void UGamePuzzleGameInstance::LoadMenu()
+void UGamePuzzleGameInstance::LoadMenuWidget()
 {
 	if (!ensure(MenuClass != nullptr)) return;
 
