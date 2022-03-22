@@ -5,21 +5,23 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "MenuInterface.h"
+
+#include "MenuWidget.h"
+
 #include "MainMenu.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class MULTPROJECT_API UMainMenu : public UUserWidget
+class MULTPROJECT_API UMainMenu : public UMenuWidget
 {
 	GENERATED_BODY()
 
 public:
-	void SetMenuInterface(IMenuInterface* _MenuInterface);
+	UMainMenu(const FObjectInitializer& ObjectInitializer);
 
-	void Setup();
-	virtual void OnLevelRemovedFromWorld(ULevel* InLevel, UWorld* InWorld);
+	void SetServerList(TArray<FString> ServerNames);
 
 protected:
 	virtual bool Initialize();
@@ -34,9 +36,11 @@ private:
 	class UButton* MenuBack_btn;
 	UPROPERTY(meta = (BindWidget))
 	class UButton* Connect_btn;
+	UPROPERTY(meta = (BindWidget))
+	class UButton* Quit_btn;
 
 	UPROPERTY(meta = (BindWidget))
-	class UEditableText* IPAdressField;
+	class UPanelWidget* ServerList;
 
 	UPROPERTY(meta = (BindWidget))
 	class UWidgetSwitcher* MenuSwitcher;
@@ -58,5 +62,8 @@ private:
 	UFUNCTION()
 	void OpenMainMenu();
 
-	IMenuInterface* MenuInterface;
+	UFUNCTION()
+	void QuitPressed();
+
+	TSubclassOf<class UUserWidget> ServerRowClass;
 };
