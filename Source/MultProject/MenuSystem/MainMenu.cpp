@@ -53,11 +53,10 @@ void UMainMenu::JoinServer()
 {
 	if (MenuInterface != nullptr)
 	{
-		/*
-		if (!ensure(IPAdressField != nullptr)) return;
-
-		const FString& Adress = IPAdressField->GetText().ToString();
-		MenuInterface->Join(Adress);*/
+		if(SelectedIndex.IsSet())
+		{
+			MenuInterface->Join(SelectedIndex.GetValue());
+		}
 	}
 }
 
@@ -72,7 +71,7 @@ void UMainMenu::QuitPressed()
 	PlayerController->ConsoleCommand("quit");
 }
 
-void UMainMenu::SetServerList(TArray<FString> ServerNames)
+void UMainMenu::SetServerList(TArray<FServerData> ServerNames)
 {
 	if (!ensure(ServerRowClass != nullptr)) return;
 
@@ -80,12 +79,14 @@ void UMainMenu::SetServerList(TArray<FString> ServerNames)
 	if (!ensure(World != nullptr)) return;
 
 	ServerList->ClearChildren();
-
+	uint32 i = 0;
 	for (auto& server : ServerNames)
 	{
 		UServerRow* Row = CreateWidget<UServerRow>(World, ServerRowClass);
 		if (!ensure(Row != nullptr)) return;
-		Row->ServerName->SetText(FText::FromString(server));
+		Row->SetServerData(server);
+		Row->Setup(this, i);
+		++i;
 		ServerList->AddChild(Row);
 	}
 }
@@ -108,5 +109,25 @@ void UMainMenu::OpenMainMenu()
 		if (!ensure(MainMenu != nullptr)) return;
 
 		MenuSwitcher->SetActiveWidget(MainMenu);
+	}
+}
+
+void UMainMenu::SelectIndex(uint32 Index)
+{
+	SelectedIndex = Index;
+	UpdateChildren();
+}
+
+void UMainMenu::UpdateChildren()
+{
+	if (ServerList == nullptr) return;
+
+	for(int32 i = 0; i < ServerList->GetChildrenCount(); ++i)
+	{
+		UServerRow* Row = Cast<UServerRow>(ServerList->GetChildAt(i));
+		if (Row != nullptr)
+		{
+			Row->Selected = (SelectedIndex.IsSet() && SelectedIndex.GetValue() == i);
+		}
 	}
 }
